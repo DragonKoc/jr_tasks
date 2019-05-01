@@ -1,0 +1,57 @@
+package test;
+
+/**
+ * Created by Kgrebenyuk on 27.12.2018.
+ */
+/*
+* http://www.mstu.edu.ru/study/materials/java/10.htm
+* http://www.quizful.net/post/java-exceptions
+* */
+class MyException extends Exception {
+
+    private int detail;
+
+    MyException(int a) {
+
+        detail = a;
+
+    }
+
+    public String toString() {
+
+        return "MyException[" + detail + "]";
+
+    }
+
+}
+
+class ExceptionDemo {
+
+    static void compute(int a) throws MyException {
+
+        System.out.println("called computer + a + ");
+
+        if (a > 10)
+
+            throw new MyException(a);
+
+        System.out.println("normal exit.");
+
+    }
+
+    public static void main(String args[]) {
+
+        try {
+
+            compute(1);
+
+            compute(20);
+
+        } catch (MyException e) {
+
+            System.out.println("caught" + e);
+
+        }
+
+    }
+}
