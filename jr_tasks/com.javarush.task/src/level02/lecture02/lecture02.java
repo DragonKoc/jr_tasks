@@ -1,5 +1,7 @@
 package level02.lecture02;
 
+import java.util.Date;
+
 /**
  * Created by Kgrebenyuk on 21.12.2018.
  */
@@ -46,11 +48,12 @@ public class lecture02 {
         cat.owner.age = 18;
         cat.owner.name = "Aleksey";
 
+        Date data = new Date();
+        System.out.println(data);
+
         System.out.println(alesha.name);
         System.out.println(cat.owner.name);
 
     }
-
-
 
 }

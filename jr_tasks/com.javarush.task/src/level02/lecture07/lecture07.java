@@ -11,6 +11,11 @@ public class lecture07
     {
 
         print4("I like to move it, move it.");
+        print3("s");
+        //System.out.println(print3("s"));
+
+        String a = print3("o");
+        System.out.println(a);
 
         MethodCall methodCall = new MethodCall();
         System.out.println(methodCall.ResultMethod());
@@ -26,6 +31,14 @@ public class lecture07
         System.out.println(s);
         System.out.println(s);
         System.out.println(s);
+    }
+
+    public static String print3(String a){
+        String b = "!!!";
+        System.out.println(a);
+        System.out.println(a);
+        System.out.println(a);
+     return b;
     }
    //Вычисление минимума из двух чисел.
     public static class MethodCall

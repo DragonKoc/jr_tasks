@@ -5,6 +5,8 @@ package level04.lecture05;
  */
 public class lecture05 {
 
+
+
     public static void main(String[] args) {
 
         int a = 5;
@@ -23,6 +25,7 @@ public class lecture05 {
         {
             System.out.println("a меньше b");
             System.out.println("a меньше b");
+            System.out.println("Start!");
         } else
 
         {

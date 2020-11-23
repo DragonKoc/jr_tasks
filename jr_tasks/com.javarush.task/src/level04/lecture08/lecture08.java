@@ -29,22 +29,22 @@ public class lecture08 {
             System.out.println(i);
             i++;   //увеличение i на 1
         }
-        while (!isExit)
+       /* while (!isExit)
 
         {
              s = buffer.readLine();
             isExit = s.equals("exit"); //Программа будет вводить строки с клавиатуры, пока не будет введена строка «exit».
         }
         while (true)
-            System.out.println("C");    //Программа будет вечно печатать на экран букву C.
+            System.out.println("C");    //Программа будет вечно печатать на экран букву C.*/
 
 
-       /* while (true)
+        while (true)
         {
             s = buffer.readLine();
             if (s.equals("exit"))
                 break;
-        }*/
+        }
 
     }
 }
